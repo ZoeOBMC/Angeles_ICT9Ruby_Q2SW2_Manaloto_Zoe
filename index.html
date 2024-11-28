@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Container Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(cat.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%; 
+      max-width: 1600px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 class="mb-4">Robotics Club Registration Form</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="example_Name">Name</label>
+          <input type="text" class="form-control" id="example_Name" placeholder="Please Input your Name">
+        </div>
+        <div class="form-group">
+          <label for="example_Email">Email Address</label>
+          <input type="email" class="form-control" id="example_Email" placeholder="Please Input your email">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="example_Age">Age</label>
+          <input type="number" class="form-control" id="example_Age" placeholder="Please Input your Age">
+        </div>
+        <div class="form-group">
+          <label for="example_PhoneNumber">Phone Number</label>
+          <input type="tel" class="form-control" id="example_PhoneNumber" placeholder="Please Input your Phone Number">
+        </div>
+      </div>
+    </div>
+    <p>Preferred Robotics Topic</p>
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Programming</label>
+    </div>
+     <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="exampleCheck2">
+      <label class="form-check-label" for="exampleCheck2">Electronics</label>
+    </div>
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="exampleCheck3">
+      <label class="form-check-label" for="exampleCheck3">Mechanical Devices</label>
+    </div>
+    <p>Robotics Experience Level</p>
+    <div class="form-check mb-3"> 
+      <input type="radio" class="form-check-input" id="exampleRadio1" name="exampleRadios" value="option1"> 
+      <label class="form-check-label" for="exampleRadio1">Beginner</label>
+    </div> 
+    <div class="form-check mb-3"> 
+      <input type="radio" class="form-check-input" id="exampleRadio2" name="exampleRadios" value="option2"> 
+      <label class="form-check-label" for="exampleRadio2">Intermediate</label> 
+    </div> 
+    <div class="form-check mb-3"> 
+      <input type="radio" class="form-check-input" id="exampleRadio3" name="exampleRadios" value="option3"> 
+      <label class="form-check-label" for="exampleRadio3">Advanced</label>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdownMenu">Preferred Robotics Project</label>
+      <select class="form-control" id="dropdownMenu"> 
+        <option>Robotic Project 1</option> 
+        <option>Robotic Project 2</option> 
+        <option>Robotic Project 3</option> 
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="comments">Statement of Interest</label>
+      <textarea class="form-control" id="comments" rows="5"></textarea>
+     <br><button type="submit"class="btn btn-primary">submit</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
